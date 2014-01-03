@@ -1,6 +1,6 @@
 <?php
 
-$pin = $_GET['pin'];
+$pin = intval($_GET['pin']);
 
 $command = "sudo python pitoast.py $pin";
 
