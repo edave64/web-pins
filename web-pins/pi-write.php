@@ -1,7 +1,7 @@
 <?php
 
-$pin = $_GET['pin'];
-$mode = $_GET['io'];
+$pin = intval($_GET['pin']);
+$mode = intval($_GET['io']);
 $command = "sudo python pioven.py $mode $pin";
 
 //echo($command);
